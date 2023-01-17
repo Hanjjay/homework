@@ -1,4 +1,4 @@
-#여러줄 데이터 입력 참고 https://inhyeokyoo.github.io/algorithm/stdin/
+# 여러줄 데이터 입력 참고 https://inhyeokyoo.github.io/algorithm/stdin/
 
 import sys
 
@@ -6,12 +6,12 @@ num = int(sys.stdin.readline())
 op = []
 
 for i in range(30):
-    op.append(i+1)
+    op.append(i + 1)
 
 while True:
     try:
         empty = map(int, sys.stdin.readline())
-        op.remove(empt)
+        op.remove(empty)
     except:
         break
 

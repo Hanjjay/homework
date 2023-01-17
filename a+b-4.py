@@ -6,4 +6,5 @@ while True:
         print(a + b)
     except:
         break
+
 # 여러줄 두칸 입력받기

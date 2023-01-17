@@ -1,0 +1,10 @@
+import sys
+empty = input()
+while True:
+    try:
+        a, b = map(int, sys.stdin.readline().split())
+        print(a + b)
+    except:
+        break
+
+# 여러줄 두칸 입력받기

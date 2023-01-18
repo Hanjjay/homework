@@ -2,7 +2,6 @@
 
 import sys
 
-num = int(sys.stdin.readline())
 op = []
 
 for i in range(30):
@@ -10,7 +9,7 @@ for i in range(30):
 
 while True:
     try:
-        empty = map(int, sys.stdin.readline())
+        empty = map(int, sys.stdin.readline().split())
         op.remove(empty)
     except:
         break

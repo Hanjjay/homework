@@ -2,7 +2,7 @@ ip = int(input())
 
 
 def hansu(ip):
-    if ip > 100:
+    if ip <= 99:
         return ip
     else:
         op = []

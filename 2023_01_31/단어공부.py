@@ -1,15 +1,18 @@
-ip = str(input())
-ip.upper()
-op = ""
-alp = {}
-for i in range(97, 123):
-    alp[str(chr(i))] = -1
+def wordcheck():
 
-for i in ip:
-    alp[i] = ip.find(i)
+    ip = str(input())
+    ip = ip.upper()
+    op = "?"
+    max = 0
+    maxindex = 0
 
-for i in list(alp.values()):
-    op += str(i)
-    op += " "
+    for i in range(len(ip)):
+        if max < ip.count(ip[i]):
+            max = ip.count(ip[i])
+            maxindex = i
 
-print(op)
+    for i in range(len(ip)):
+        if max == ip.count(ip[i]) and ip[maxindex] != ip[i]:
+            return print(op)
+    op = ip[maxindex]
+    return print(op)
